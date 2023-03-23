@@ -9,21 +9,60 @@
 <body>
     <script>
         
-        let precioProducto = 100;
-        let precioProducto2 = 100;
-        //Se guarda el resultado por le return por calcularIva
-        function calcularIva(precio){
-            return precio * 1.21;
-        }
-        function calculaIvareducido(precio){
-            return precio * 1.10;
-        }
-        //Se escribe dentro de () solo para parametros. Para funciones no.
-        function calcularTotal(){
-            return (calcularIva(precioProducto1)) + (calculaIvareducido(precioProducto2));
-        }
-        document.write(calcularTotal())
+        // let precioProducto = 100;
+        // let precioProducto2 = 100;
+//Se guarda el resultado por le return por calcularIva
+        // function calcularIva(precio){
+        //     return precio * 1.21;
+        // }
+        // function calculaIvareducido(precio){
+        //     return precio * 1.10;
+        // }
+//Se escribe dentro de () solo para parametros. Para funciones no.
+        // function calcularTotal(){
+        //     return (calcularIva(precioProducto1)) + (calculaIvareducido(precioProducto2));
+        // }
+        // document.write(calcularTotal())
+// Crear un script, en que se solicite la entrada de números mediante la instrucción 
+// parseInt(prompt(“…”)). Mientras ese número sea distinto de 0 (cero), lo irá sumando en 
+// otra variable y solicitará que introduzcamos un nuevo número. Finalmente mostrará la 
+// suma total alcanzada
+        // </script>
+    
+    <script>
         
+        let introducirnumero = parseInt(prompt("Introducir numero 1 "))
+        let introducirnumero2 = parseInt(prompt("Introducir numero 2 ")) 
+        
+        function suma1 (num1){
+        while(num1 != 0){
+            return num1++;
+            
+        
+        }
+    }
+    
+        function suma2 (num2){
+        while(num2 != 0){
+            num2++;
+           
+        }
+    }
+        function total(){
+            return (suma1 + sum2);
+        }
+    
+        
+
+
+        document.write(`El total de la suma de los números introducidos es: ${total}`);
     </script>
+    <!-- crear un script, en que se solicite una temperatura en grados Celsius mediante una 
+    ventana de diálogo. Luego se convierte a número decimal, se calcula el equivalente en 
+    grados Fahrenheit y se muestra el resultado en otra ventana de dialogo. ( 9/5 * celsius + 
+    32) -->
+
+    <!-- Realizar un script que, mediante ventanas de diálogo, solicite una distancia en millas 
+    terrestres y muestre su equivalente en kilómetros (1 milla son 1,609 kilómetros) -->
 </body>
 </html>
