@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <!-- <script>
+        function saludar() {
+            alert("Hola Mundo");
+        }
+
+        saludar();
+    </script> -->
+    <!-- <<script>
+        let miSuma;
+        let numeroUsuario1 = parseInt(prompt("Introduzca un primer número"));
+        let numeroUsuario2 = parseInt(prompt("Introduzaca un segundo número"));
+        function sumar(num1, num2){
+            miSuma = num1 + num2;
+            alert(miSuma);
+        }   
+        sumar(numeroUsuario1, numeroUsuario2);
+    </script>> -->
+
+    <!-- <script>
+        function sumar(numero1, numero2){
+            return (numero1 + numero2)
+        }
+        let valorRetornado = sumar(100, 200);
+
+        alert(valorRetornado);
+    </script> -->
+
+    <!-- <script>
+        let nombre = prompt("Introduzca nombre :");
+        let apellido = prompt("Introduzca apellido :");
+        let edad = parseInt(prompt("Introduzca edad :"));
+
+        function mensaje(nombre, apellido, edad){
+            if(edad <= 18) {
+                alert(`Fuera de aqui ${nombre + apellido}`);
+            } else {
+                alert(`Hola ${nombre + apellido}, te damos la Bienvenida`);
+            }
+        } 
+        mensaje(nombre, apellido, edad);
+    </script> -->
+
+    <script>
+        //Primero declaramos las variables
+        let factura = parseInt(prompt("Introducir importe base: "));
+        const iva = 0.21;
+        const irpf = 0.19;
+        //Creamos las funciones. Le damos nombre
+            //Entre parentesis() introducimos las variables a usar
+                //La función guarda los datos
+        function totaliva(iva, factura){
+            miiva = (iva * factura);   
+        }
+        function totalirpf(irpf, factura){
+            miirpf = (factura * irpf);
+        }
+        //Invocamos los datos guardados en las funciones
+        totaliva (iva, factura);
+        totalirpf (irpf, factura);
+        //Imprimimos
+        document.write(`El importe total es ${(factura + miiva)-miirpf}`);
+    </script>
+
+</body>
+</html>

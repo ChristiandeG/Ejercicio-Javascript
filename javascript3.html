@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 3</title>
+</head>
+<body>
+    <!-- For -->
+    <!-- <script>
+        let i;
+
+        for (i = 1; i < 11; i++){
+         document.write("En esta vuelta \"i\"  vale" + i + "</br>");
+        }
+    </script> -->
+
+    <!-- For break -->
+    <!-- <script>      
+        for (i = 2; i < 11; i++){
+            
+            if (i==5) {
+            continue;
+        }
+        document.write("En esta vuelta \"i\"  vale" + i + "</br>");
+       
+        }
+    </script>
+     -->
+    <!-- Ejercicio 1 -->
+    <script>  
+        let i;
+
+        for(i = 1; i <= 5; i++){
+            if(i == 1){
+                document.write("<ul>")
+            }
+                document.write("<li><a href=\"#\">"+"Enlace"+i+"</a></li>"+"</br>");
+            if(i == 5){
+                document.write("</ul>")
+            }
+            }
+        
+    </script>
+
+    <!-- Ejercicio 2 -->
+    <script>
+        let total= 0;
+        for(i=1; i<100; i++){
+            if(i%13 == 0){
+                total++;
+                document.write(i + " es multiplo de 13. " + "</br>");
+            } else {
+            }  
+         }  document.write(`El numero total de numeros divisibles entre 13 es ${total}`);
+    </script>
+</body>
+</html>

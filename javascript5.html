@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let precioProducto = 100;
+        let precioProducto2 = 100;
+        //Se guarda el resultado por le return por calcularIva
+        function calcularIva(precio){
+            return precio * 1.21;
+        }
+        function calculaIvareducido(precio){
+            return precio * 1.10;
+        }
+        //Se escribe dentro de () solo para parametros. Para funciones no.
+        function calcularTotal(){
+            return (calcularIva(precioProducto1)) + (calculaIvareducido(precioProducto2));
+        }
+        document.write(calcularTotal())
+        
+    </script>
+</body>
+</html>

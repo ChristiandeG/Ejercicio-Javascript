@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control flujo 2</title>
+</head>
+<body>
+    If anidados
+    <script>
+        let nota = 8;
+        
+        if(nota <= 2){
+            document.write("Muy deficiente");
+        } else if ((nota >=3) && (nota <5)){
+            document.write("Insuficiente");
+        } else if ((nota >=5) && (nota <=6)){
+            document.write("Suficiente");
+        } else if ((nota >=7) && (nota <=8)){
+            document.write("Notable");
+        } else if (nota > 8){
+            document.write("Sobresaliente");
+        } else {
+            document.write("Debe hacer el examen");
+        }
+    </script>
+
+    <!-- Declaracion Switch -->
+    <script>
+        let notas = 4;
+
+        switch (notas){
+            case 0:
+            case 1: 
+            case 2:
+                document.write("Muy deficiente");
+                break;
+            case 3:
+            case 4:
+                document.write("Insufuciente");
+                break;
+            case 5:
+            case 6:
+                document.write("Suficiente");
+                break;
+            case 7:
+            case 8:
+                document.write("Notable");
+                break;
+            case 9:
+            case 10:
+                document.write("SObresaliente");
+                break;
+                document.write("Debe hacer el examen");
+        }
+    </script>
+
+    <!-- Bucles While-->
+    <script>
+        let vuelta = 1;
+
+        while (vuelta < 11){
+            document.write("Esta es la vuelta: " + vuelta + "<br/>")
+            vuelta++;
+        }
+        document.write("Hemos salido de bucle");
+
+    </script>
+
+
+    <!-- Bucles Do-While -->
+    <script>
+        let vueltas = 4;
+        do {
+            document.write("Esta es la vuelta: " + vueltas + "<br>");
+            vueltas ++
+        } while (vueltas < 11);
+    </script>
+
+    <!-- Ejercicio 1 -->
+    <script>
+    let dia = 7;
+
+    switch (dia){
+        case 1: 
+            document.write("Lunes");
+            break;
+        case 2:
+            document.write("Martes");
+            break;
+        case 3:
+            document.write("Miercoles");
+            break;
+        case 4:
+            document.write("Jueves");
+            break;
+        case 5:
+            document.write("Viernes");
+            break;
+        case 6:
+            document.write("Sabado");
+            break;
+        case 7:
+            document.write("Domingo");
+            break;
+            default:
+        }
+        if (dia <= 5){
+            document.write(" No es fin de semana </br>");
+        } else {
+            document.write(" Es fin de semana </br>");
+        }
+    </script>
+
+
+    <!-- Ejercicio 2 -->
+    <script>
+        let horas = 1;
+        let minutos = 12;
+        let segundos = 12;
+
+        if ((horas>=0 && horas <= 23) && (minutos>=0 && minutos <= 59) && (segundos>=0 && minutos <= 59)){
+            document.write("Es las hora: " + horas + " " + "Es el minuto: " + minutos + " " + "Es el segundo: " + segundos);
+        } else {
+            document.write("Codigo mal introducido");
+        }
+    </script>
+
+        
+
+    <!-- Ejercicio 3 -->
+    <script>
+        let meses = 3;
+        let dias = 31;
+
+        if ((meses == 2 && dias == 29) && (dias>=1 && dias<=31) && (meses>=1 && meses<=12))  {
+            document.write("Valido para año bisiesto");
+        } else if ((meses != 2 || dias != 29) && (dias>=1 && dias<=31) && (meses>=1 && meses<=12)){
+            document.write("Valido para año no bisiesto");
+        } else {
+            document.write("FATAL ERROR");
+        }
+        
+    </script>
+    
+
+
+</body>
+</html>
