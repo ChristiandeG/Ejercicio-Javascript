@@ -23,46 +23,96 @@
         //     return (calcularIva(precioProducto1)) + (calculaIvareducido(precioProducto2));
         // }
         // document.write(calcularTotal())
+
+
 // Crear un script, en que se solicite la entrada de números mediante la instrucción 
 // parseInt(prompt(“…”)). Mientras ese número sea distinto de 0 (cero), lo irá sumando en 
 // otra variable y solicitará que introduzcamos un nuevo número. Finalmente mostrará la 
 // suma total alcanzada
-        // </script>
+// </script>
     
+    <!-- <script>
+        // TODO: EJERCICIO 1
+        
+        let introducirNumero = parseInt(prompt("Introducir numero  "));
+
+        suma(introducirNumero);
+
+        function suma (numero){
+
+            if (numero === 0){
+
+                alert("el numero debe ser diferente de 0");
+
+            }else if (numero >0 || numero <0){
+
+                let introducirNumerox = 1;
+
+                while(introducirNumerox != 0){
+
+                    introducirNumerox = parseInt(prompt("Introducir numero  "));
+
+                    numero += introducirNumerox;
+                }
+            }
+            document.write(numero);
+        }     
+    </script> -->
     <script>
-        
-        let introducirnumero = parseInt(prompt("Introducir numero 1 "))
-        let introducirnumero2 = parseInt(prompt("Introducir numero 2 ")) 
-        
-        function suma1 (num1){
-        while(num1 != 0){
-            return num1++;
-            
-        
+        // Pedimos que introduzcan un número
+        let introducirNumero = parseInt(prompt("Introducir numero 1  "));
+        //El numero introducido entra como variable introducir número
+        suma(introducirNumero);
+        //Entra en la funcion con el nombre num.
+        function suma(num){
+            //Declaramos numerosuma porque vamos a usarlo en el while.
+             //No se podría usa sin declarar.
+            let numerosuma = 1;
+            //Mientras num y numerosa sean distintos de cero. No sale del bucle while.
+            while (num != 0 && numerosuma !=0){
+                numerosuma = parseInt(prompt("Introducir numero 2 "));
+                //Suma acumulativa en num
+                num += numerosuma;
+            }
+            document.write(num);
         }
-    }
-    
-        function suma2 (num2){
-        while(num2 != 0){
-            num2++;
-           
-        }
-    }
-        function total(){
-            return (suma1 + sum2);
-        }
-    
-        
 
-
-        document.write(`El total de la suma de los números introducidos es: ${total}`);
     </script>
     <!-- crear un script, en que se solicite una temperatura en grados Celsius mediante una 
     ventana de diálogo. Luego se convierte a número decimal, se calcula el equivalente en 
     grados Fahrenheit y se muestra el resultado en otra ventana de dialogo. ( 9/5 * celsius + 
     32) -->
+    <script>
+        let temperaturaC = parseFloat(prompt("Introducir grados Celsius  "));
+        document.write(temperaturaC + "<br/>")
+
+    
+        let faren = parseFloat(0);
+        operacion (temperaturaC);
+        
+        function operacion(grados){
+            faren = (9/5)  * grados + 32;
+            return faren;
+        }
+        document.write("Grados fahrenheit " + faren);
+        
+
+    </script>
 
     <!-- Realizar un script que, mediante ventanas de diálogo, solicite una distancia en millas 
     terrestres y muestre su equivalente en kilómetros (1 milla son 1,609 kilómetros) -->
+    <script>
+         
+        let millas = parseFloat(prompt("Introducir millas: "));
+        let km = parseFloat(0);
+        conversion (millas);
+
+        function conversion (dato){
+            km = (dato * 1.609);
+            return km;
+        }
+        alert("La distancia en km es " + km);
+    
+    </script>
 </body>
 </html>

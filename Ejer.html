@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Realizar un script que, mediante ventanas de diálogo, solicite una distancia en millas 
+    terrestres y muestre su equivalente en kilómetros (1 milla son 1,609 kilómetros) -->
+    <script>
+        let millas = parseFloat(prompt("Introducir millas: "));
+        let km = parseFloat(0);
+        conversion (millas);
+
+        function conversion (dato){
+            km = (dato * 1.609);
+            return km;
+        }
+        alert("La distancia en km es " + km);
+    </script>
+</body>
+</html>
