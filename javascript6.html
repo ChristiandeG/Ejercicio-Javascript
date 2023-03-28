@@ -13,31 +13,28 @@
  - Mediante una función donde ya tenemos el día, mes y año actual, se calculará la edad del usuario.
  - El resultado final se mostrará en pantalla -->
  <script>
-     
-     let introducirDia = parseInt(prompt("Introducir dia: "));
-     let introducirMes = parseInt(prompt("Introducir mes: "));
-     let introducirAno = parseInt(prompt("Introducir ano: "));
-     // Dia actual
-     const x = 27;
-     // Mes actual
-     const y = 03;
-     // Ano actual
-     const z = 2023
-     let anonacimiento = 0;
-     calcularEdad(introducirDia, introducirMes, introducirAno);
+let introducirDia = parseInt(prompt("Introducir dia: "));
+let introducirMes = parseInt(prompt("Introducir mes: "));
+let introducirAno = parseInt(prompt("Introducir ano: "));
+let anonac;
 
 function calcularEdad(dia, mes, ano){
-    if((introducirMes <= y) && (introducirDia <= x)){
-        anonacimiento = z - introducirAno - 1;
-    } else {
-        anonacimiento = z - introducirAno;
+    // Dia actual
+    let x = 27;
+    // Mes actual
+    let y = 03;
+    // Ano actual
+    let z = 2023
+    if((dia <= x) && (mes <= y)){
+        anonac = z - ano - 1;
+        
+    } else{
+        anonac = z - ano;
     }
-
+    
 }
-
-document.write(`Tienes ${anonacimiento} años`)
-
-
+calcularEdad(introducirDia, introducirMes, introducirAno);
+document.write(anonac);
 </script>
 
 </body>
