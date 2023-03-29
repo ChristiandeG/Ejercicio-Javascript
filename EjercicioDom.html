@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Logotipo</h1>
+        <nav>
+        <ul>
+        <li><a href="#">Inicio</a></li>
+       <li><a href="#">Empresa</a></li>
+       <li><a href="#">Localización</a></li>
+       <li><a href="#">Contacto</a></li>
+        </ul>
+        </nav>
+        </header>
+        <section>
+        <h2 id="fraseH2"></h2> 
+        <h3>Párrafo 1</h3>
+        <p> . . . . Colocar Párrafo de texto falso con lorem . . . .</p>
+        <h3>Párrafo 2</h3>
+        <p></p> 
+        </section>
+        <footer>
+        <address>C/ Principal nº2 Villamayor</address>
+        </footer>
+        
+        
+        <script>
+       // 1º Cambiar el texto del enlace "Localización", por el text 
+    //    "Productos". Utilizar la propiedad "children" junto con los 
+    //    otros métodos y propiedades necesarios.
+        
+        
+       // 2º Introducir el texto "Bienvenid@ a nuestra Web" en la 
+    //    etiqueta <h2></h2> con la ayuda del id. 
+        
+       // 3º Introducir en el segundo párrafo el mismo texto que 
+    //    contiene el primer párrafo
+        </script>
+
+
+
+        <!-- TODO: Ejercicio 1 -->
+        <script>
+          
+
+            // let tagul = document.getElementsByTagName("ul")[0];
+
+            let tagil = tagul.children[2];
+
+            let tatext = tagil.children[0];
+
+            tatext.textContent="Productos";
+
+            // tatext.remove();  
+            // tagil.textContent="Productos";
+
+
+        </script>
+
+        <!-- // TODO: Ejercicio 2  -->
+        <script>
+           document.getElementById(fraseH2);
+
+            fraseH2.textContent = "Bienvenid@ a nuestra web";
+        </script>
+        <!-- TODO: Ejercicio 3 -->
+        <script>
+
+            let parrafo1 = document.getElementsByTagName("p")[0];
+            let parrafo2 = document.getElementsByTagName("p")[1];
+
+            // section1.insertbefore(parrafo1, parrafo2);
+            parrafo2.textContent = parrafo1.textContent;
+        
+
+
+
+        </script>
+
+</body>
+</html>

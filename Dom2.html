@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mi_clase {
+            border: solid 1px orange;
+            background-color: silver;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Es es un titulo</h1>
+    <script>
+        let titular = document.getElementsByTagName("h1")[0];
+
+        titular.className = "mi_clase"; Esta etiqueta no se suele usar
+
+        titular.classList.add("mi_clase");
+
+    </script> -->
+
+    <h1 class="mi_clase">Esto es un titulo</h1>
+    <button onclick="conmutarclasse()">Conmutador</button>
+
+    <script>
+        let titular = document.getElementsByTagName("h1")[0];
+        
+        function conmutarclasse(){
+            titular.classList.toggle("mi_clase");
+        }
+    </script>
+</body>
+</html>

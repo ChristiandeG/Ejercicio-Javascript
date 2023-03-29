@@ -63,17 +63,119 @@
         document.body.appendChild(appendchild(nuevoElemento));
 
     </script> -->
-    <ul id="padre">
+
+
+    <!-- TODO: Ejercicio mover posiciones
+    <ul>
+        <li>Ford</li>
+        <li>Seat</li>
+        <li>Maserati</li>
+        <li>Renault</li>
+    </ul>
+    Se nombre a casa elemento para moverlo
+    <script>
+        let ul = document.getElementsByTagName("ul")[0];
+        let liMaserati = ul.getElementsByTagName("li")[2];
+        let liSeat = ul.getElementsByTagName("li")[1];
+        ul.insertBefore(liMaserati, liSeat);
+
+        Otra forma: ul.insertbefore(ul.children[2], ul.children[1]);
+        
+
+    </script> -->
+
+
+    <!-- TODO: Ejercicio borrar posiciones
+    <ul>
         <li>Ford</li>
         <li>Seat</li>
         <li>Maserati</li>
         <li>Renault</li>
     </ul>
     <script>
-        let Mas = document.getElementsByid("padre");
-        Mas.insertbefore();
-        
+        let ul = document.getElementsByTagName("ul")[0];
+        let liFord = document.getElementsByTagName("li")[0];
 
-    </script>
+        ul.removeChild(liFord);
+
+    </script> -->
+
+    <!-- TODO: Crear nuevo elemento y sustituilo
+<ul>
+    <li>Ford</li>
+    <li>Seat</li>
+    <li>Maserati</li>
+    <li>Renault</li>
+</ul>
+
+<script>
+    let nuevoElemento = document.createElement("li");
+    let textElemento = document.createTextNode("Audi");
+
+    let nodoPadre = document.getElementsByTagName("ul")[0];
+    let nodoHijo = document.getElementsByTagName("li")[0];
+
+    nuevoElemento.appendChild(textElemento);
+
+    nodoPadre.replaceChild(nuevoElemento, nodoHijo);
+
+</script> -->
+
+<!-- TODO: Sustituir texto de un padre
+
+<h1 id="padre">Encabezados</h1>
+
+<script>
+    let padre = document.getElementById("padre");
+
+    alert(padre.innerHTML);
+
+    padre.innerHTML = "Nuevo encabezado";
+</script> -->
+
+
+<!-- TODO: innerHTML--se ven etiquetas textContent--se ve le texto
+<div id="padre">
+    <h1>Encabezado</h1>
+    <p>Esto es un parrafo</p>
+</div>
+
+<script>
+    let padre = document.getElementById("padre");
+
+    alert(padre.textContent);
+</script> -->
+
+
+<!-- TODO: Metodo setAttribute--metemos un elemento dentro de una etiqueta
+<a id = "link" target="_blank">Google</a>
+
+<script>
+    document.getElementById("link").setAttribute("href", "https://www.google.es");
+</script> -->
+
+
+<!-- TODO: getAttribute--coger atributo de un elemento y meterlo en otro
+
+<a id = "link" href="https://www.google.es" target="_blank">Google</a>
+<p></p>
+
+<script>
+
+    let valorAtributo = document.getElementById("link").getAttribute("href");
+
+    let parrafo = document.getElementsByTagName("p")[0];
+
+    parrafo.innerHTML = valorAtributo; -->
+
+<!-- TODO: removeAttribute--Borrar atributo de un elemento
+
+<a id = "link" href="https://www.google.es" target="_blank">Google</a>
+
+<script>
+    document.getElementById("link").removeAttribute("href");
+</script> -->
+
+
 </body>
 </html>
