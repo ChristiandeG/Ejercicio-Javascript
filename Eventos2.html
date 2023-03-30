@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos2</title>
+</head>
+<body>  
+    <!-- TODO: Difernte forma de lanzar evento -->
+    <!-- Hacerlo todo en una linea -->
+
+    <!-- TODO: addEvenListener() -->
+    <form name="mi_formulario">
+        <input id="miBoton" name="m_boton" type="button" value="mi boton"/>
+        <input id="texto" type="text" name="caja_texto"/>
+
+        <script>
+            function cambiocolor(){
+                
+                document.getElementById("texto").style.backgroundColor = "red";
+            }
+            document.getElementById("miBoton").addEventListener("click", cambiocolor)
+        </script>
+
+    
+</body>
+</html>

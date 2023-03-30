@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .font16{
+            font-size: 16px;
+        }
+        .font22{
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Colocar en HTML un párrafo y dos botones. A continuación, crear un script que 
+    permita aumentar y/o disminuir el tamaño de la tipografía a través de los botones. El 
+    tamaño variará entre 16 y 22px. -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, libero esse est quod fugiat ex sapiente a molestiae vero. Qui tempora eligendi maxime quisquam, corrupti in nostrum alias natus enim!</p>
+    <button id="boton+">Aumenta tamaño</button>
+    <button id="boton-">Disminuye tamaño</button>
+    <h1> </h1>
+
+    <script>
+
+        
+        function aumentasize() {
+            document.getElementsByTagName("p")[0].classList.add("font22");
+            // document.getElementById("boton+").style.font = "red";
+        }
+            document.getElementById("boton+").onclick = aumentasize;
+
+        function disminuirsize(){
+            document.getElementsByTagName("p")[0].classList.remove("font22");
+        }
+            document.getElementById("boton-").onclick = disminuirsize;
+
+
+
+    </script>
+
+
+    <!-- Colocar una imagen y un botón en HTML. Mediante un script hacer que al presionar el 
+    botón cambie la imagen. En total se verán 4 imágenes. -->
+    <img id ="imagen" src="https://www.picsum.photos/id/100/300/300"/>
+    <button id="cambio">Presiona para cambiar</button>
+    
+    <script>
+        let x = 100;
+        function cambioimagen(){  
+           if(x <= 103){
+               x++;
+               document.getElementById("imagen").setAttribute("src", "https://www.picsum.photos/id/"+ x +"/300/300");
+           } else {
+            x = 100;
+        }
+    }     
+        document.getElementById("cambio").onclick = cambioimagen;
+    </script>
+</body>
+</html>

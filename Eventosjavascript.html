@@ -4,54 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EventosJavascript</title>
 </head>
 <body>
-    <!-- <input type="button" onclick="saludar()" value="saluda"/> -->
-    <!-- TODO: Invocar evento -->
-    <!-- <script>
+    <!-- <input type="button" onclick="saludar()" value="saluda"/>
+    TODO: Invocar evento
+    <script>
         function saludar(){
             alert("hola");
         }
     </script> -->
 
+<!-- 
+    TODO:Acceder al elemento desde Javascript y darle uso a funcion
+    
+    <form name="mi_formulario">
+        <input id="miBoton" name="m_boton" type="button" value="mi boton"/>
+    
+        <input type="text" name="caja_texto"/>
+    </form>
 
-    <!-- TODO:Acceder al elemento desde Javascript y darle uso a funcion-->
-<!--     
-        <form name="mi_formulario">
-            <input id="miBoton" name="m_boton" type="button" value="mi boton"/>
+    <script>
+        function cambiaColor(){
+            document.mi_formulario.caja_texto.style.backgroundColor = "yellow";
+        }
         
-            <input type="text" name="caja_texto"/>
-        </form>
+        document.getElementById("miBoton").onclick = cambiaColor;
+    </script> -->
+
+<!--     
+        TODO: Ejecicio 1
+        Crear una función que al pulsar un botón abra un alert con el mensaje ¡Hola! -->
+        <!-- <button id="boton">Esto es un botón</button>
 
         <script>
-            function cambiaColor(){
-                document.mi_formulario.caja_texto.style.backgroundColor = "yellow";
+            
+            function saludar(){
+                alert("hola");
             }
             
-            document.getElementById("miBoton").onclick = cambiaColor;
+            document.getElementById("boton").onclick = saludar;
         </script> -->
-
-    
-        <!-- TODO: Ejecicio 1 -->
-        <!-- Crear una función que al pulsar un botón abra un alert con el mensaje ¡Hola! -->
-            <!-- <button id="boton">Esto es un botón</button>
-
-            <script>
-                
-                function saludar(){
-                    alert("hola");
-                }
-                
-                document.getElementById("boton").onclick = saludar;
-            </script> -->
 
         <!-- TODO: Ejercicio 2 -->
         <!-- Crear una función que al pulsar un botón muestre en un alert el resultado de sumar 2 + 2. -->
             <!-- <button id="boton">Esto hace la suma</button>
             <script>
+                let x = 2;
                 function suma(){
-                    alert("2 + 2 = 4")
+                    alert("Resultado de 2 + 2: "+ (x + x));
                 }
                 document.getElementById("boton").onclick = suma;
             </script> -->
