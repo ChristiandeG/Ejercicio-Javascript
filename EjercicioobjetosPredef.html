@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- TODO: -->
+    <!-- <script>
+        let miCadena = "Juan Pedro Francisco Ana Jose";
+        let nuevaCadena = miCadena.split(" ");
+        for (i = 0; i < miCadena.length; i++){
+            document.write("Hola " + nuevaCadena[i] + "</br>");
+        }
+    </script> -->
+    <button id = "boton1">Ingresar</button>
+    <button id = "boton2">Extraer</button>
+    <script>
+        let dato1 =0;
+        let dato2 =0;
+        function ingresar(){
+            let dato = parseInt(prompt("Introducir número: "));
+            dato1 = dato + dato1;
+      
+        }
+        document.getElementById("boton1").onclick = ingresar;    
+        function extraer(){
+            let dato = parseInt(prompt("Introducir número: "));
+            dato2 = dato2 - dato;
+       
+        }
+        document.getElementById("boton2").onclick = extraer; 
+        total = (dato1 + dato2);
+        </script>
+
+</body>
+</html>
